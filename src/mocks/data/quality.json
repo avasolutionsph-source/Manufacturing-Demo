@@ -1,0 +1,182 @@
+{
+  "ncrs": [
+    {
+      "id": "ncr-001",
+      "ncrNumber": "NCR-2025-001",
+      "title": "Surface finish out of specification",
+      "description": "Multiple valve housings showing surface roughness exceeding Ra 3.2 specification. Affected units from lot LOT-2025-001.",
+      "workOrderId": "wo-001",
+      "workOrderNumber": "WO-2025-001",
+      "productId": "prd-001",
+      "productName": "Industrial Valve Assembly",
+      "defectType": "Surface Defect",
+      "severity": "major",
+      "status": "investigating",
+      "quantity": 5,
+      "disposition": "rework",
+      "rootCause": "Tool wear on CNC machine - end mill past service life",
+      "reportedBy": "Emily Chen",
+      "reportedAt": "2025-11-28T10:30:00Z",
+      "assignedTo": "Mike Rodriguez"
+    },
+    {
+      "id": "ncr-002",
+      "ncrNumber": "NCR-2025-002",
+      "title": "Dimensional variance on bearing mount",
+      "description": "Bearing mount diameter measuring 25.08mm vs specification of 25.00mm +/- 0.02mm",
+      "workOrderId": "wo-005",
+      "workOrderNumber": "WO-2025-005",
+      "productId": "prd-005",
+      "productName": "Electric Motor Housing",
+      "defectType": "Dimensional",
+      "severity": "minor",
+      "status": "open",
+      "quantity": 3,
+      "reportedBy": "Emily Chen",
+      "reportedAt": "2025-11-29T08:15:00Z"
+    },
+    {
+      "id": "ncr-003",
+      "ncrNumber": "NCR-2025-003",
+      "title": "Material hardness below tolerance",
+      "description": "Incoming inspection found shaft material hardness at 52 HRC, specification requires 55-58 HRC",
+      "productId": "prd-001",
+      "productName": "Industrial Valve Assembly",
+      "defectType": "Material",
+      "severity": "critical",
+      "status": "investigating",
+      "quantity": 20,
+      "disposition": "return_to_vendor",
+      "rootCause": "Supplier heat treatment process deviation",
+      "correctiveAction": "Supplier corrective action requested, additional incoming inspection requirements added",
+      "reportedBy": "Emily Chen",
+      "reportedAt": "2025-11-27T14:45:00Z",
+      "assignedTo": "Sarah Johnson"
+    },
+    {
+      "id": "ncr-004",
+      "ncrNumber": "NCR-2025-004",
+      "title": "Assembly torque specification not met",
+      "description": "Final assembly torque check showed 8 units with bolts torqued below 45 Nm minimum",
+      "workOrderId": "wo-004",
+      "workOrderNumber": "WO-2025-004",
+      "productId": "prd-004",
+      "productName": "Precision Bearing Set",
+      "defectType": "Assembly",
+      "severity": "minor",
+      "status": "closed",
+      "quantity": 8,
+      "disposition": "rework",
+      "rootCause": "Torque wrench calibration drift",
+      "correctiveAction": "Torque wrench recalibrated, affected units retorqued and verified",
+      "reportedBy": "Emily Chen",
+      "reportedAt": "2025-11-26T11:00:00Z",
+      "assignedTo": "Mike Rodriguez",
+      "closedAt": "2025-11-27T10:00:00Z",
+      "closedBy": "Emily Chen"
+    },
+    {
+      "id": "ncr-005",
+      "ncrNumber": "NCR-2025-005",
+      "title": "Wiring color code mismatch",
+      "description": "Control panel wiring using incorrect color codes per IEC 60446 standard",
+      "workOrderId": "wo-003",
+      "workOrderNumber": "WO-2025-003",
+      "productId": "prd-003",
+      "productName": "Control Panel Assembly",
+      "defectType": "Workmanship",
+      "severity": "major",
+      "status": "open",
+      "quantity": 12,
+      "reportedBy": "Emily Chen",
+      "reportedAt": "2025-11-29T09:30:00Z"
+    }
+  ],
+  "inspectionForms": [
+    {
+      "id": "form-001",
+      "name": "Valve Assembly Final Inspection",
+      "productId": "prd-001",
+      "checkpoints": [
+        {
+          "id": "cp-001",
+          "name": "Pressure Test",
+          "type": "measurement",
+          "specification": "150 PSI for 5 minutes",
+          "minValue": 150,
+          "maxValue": 155,
+          "unit": "PSI"
+        },
+        {
+          "id": "cp-002",
+          "name": "Leak Check",
+          "type": "pass_fail",
+          "specification": "No visible leaks at test pressure"
+        },
+        {
+          "id": "cp-003",
+          "name": "Surface Finish",
+          "type": "measurement",
+          "specification": "Ra 3.2 or better",
+          "minValue": 0,
+          "maxValue": 3.2,
+          "unit": "Ra"
+        },
+        {
+          "id": "cp-004",
+          "name": "Visual Inspection",
+          "type": "visual",
+          "specification": "No visible defects, scratches, or contamination"
+        }
+      ]
+    },
+    {
+      "id": "form-002",
+      "name": "Motor Housing Inspection",
+      "productId": "prd-005",
+      "checkpoints": [
+        {
+          "id": "cp-005",
+          "name": "Bearing Bore Diameter",
+          "type": "measurement",
+          "specification": "25.00mm +/- 0.02mm",
+          "minValue": 24.98,
+          "maxValue": 25.02,
+          "unit": "mm"
+        },
+        {
+          "id": "cp-006",
+          "name": "Concentricity",
+          "type": "measurement",
+          "specification": "0.01mm TIR",
+          "minValue": 0,
+          "maxValue": 0.01,
+          "unit": "mm"
+        },
+        {
+          "id": "cp-007",
+          "name": "Balance Test",
+          "type": "pass_fail",
+          "specification": "Vibration below 0.5mm/s at 3600 RPM"
+        }
+      ]
+    }
+  ],
+  "inspectionResults": [
+    {
+      "id": "result-001",
+      "formId": "form-001",
+      "workOrderId": "wo-001",
+      "inspectorId": "usr-003",
+      "inspectorName": "Emily Chen",
+      "timestamp": "2025-11-28T15:30:00Z",
+      "overallResult": "pass",
+      "results": [
+        { "checkpointId": "cp-001", "result": "pass", "value": 152 },
+        { "checkpointId": "cp-002", "result": "pass" },
+        { "checkpointId": "cp-003", "result": "pass", "value": 2.8 },
+        { "checkpointId": "cp-004", "result": "pass", "notes": "Minor cosmetic mark on non-critical surface - acceptable" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "usr-001",
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@manufacturing.demo",
+      "role": "planner",
+      "plant": "plant-001",
+      "password": "demo123"
+    },
+    {
+      "id": "usr-002",
+      "name": "Mike Rodriguez",
+      "email": "mike.rodriguez@manufacturing.demo",
+      "role": "shop_foreman",
+      "plant": "plant-001",
+      "password": "demo123"
+    },
+    {
+      "id": "usr-003",
+      "name": "Emily Chen",
+      "email": "emily.chen@manufacturing.demo",
+      "role": "quality_inspector",
+      "plant": "plant-001",
+      "password": "demo123"
+    },
+    {
+      "id": "usr-004",
+      "name": "Admin User",
+      "email": "admin@manufacturing.demo",
+      "role": "admin",
+      "plant": "plant-001",
+      "password": "admin123"
+    }
+  ],
+  "plants": [
+    {
+      "id": "plant-001",
+      "name": "Main Manufacturing Facility",
+      "code": "MMF",
+      "location": "Chicago, IL",
+      "timezone": "America/Chicago"
+    },
+    {
+      "id": "plant-002",
+      "name": "West Coast Assembly",
+      "code": "WCA",
+      "location": "Los Angeles, CA",
+      "timezone": "America/Los_Angeles"
+    }
+  ]
+}

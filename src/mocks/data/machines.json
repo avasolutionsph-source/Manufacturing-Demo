@@ -1,0 +1,153 @@
+{
+  "machines": [
+    {
+      "id": "mach-001",
+      "name": "CNC Mill #1",
+      "type": "CNC Milling Machine",
+      "location": "Building A - Bay 1",
+      "status": "online",
+      "lastHeartbeat": "2025-11-29T10:45:00Z",
+      "oee": 82.5,
+      "currentJob": "WO-2025-005",
+      "cycleTime": 45,
+      "partCount": 127
+    },
+    {
+      "id": "mach-002",
+      "name": "CNC Lathe #1",
+      "type": "CNC Lathe",
+      "location": "Building A - Bay 2",
+      "status": "online",
+      "lastHeartbeat": "2025-11-29T10:44:30Z",
+      "oee": 78.3,
+      "currentJob": "WO-2025-001",
+      "cycleTime": 32,
+      "partCount": 89
+    },
+    {
+      "id": "mach-003",
+      "name": "Press #1",
+      "type": "Hydraulic Press",
+      "location": "Building B - Bay 1",
+      "status": "offline",
+      "lastHeartbeat": "2025-11-29T08:30:00Z",
+      "oee": 0,
+      "cycleTime": null,
+      "partCount": 0
+    },
+    {
+      "id": "mach-004",
+      "name": "Assembly Station #1",
+      "type": "Assembly Station",
+      "location": "Building A - Bay 3",
+      "status": "online",
+      "lastHeartbeat": "2025-11-29T10:45:15Z",
+      "oee": 91.2,
+      "currentJob": "WO-2025-001",
+      "cycleTime": 180,
+      "partCount": 32
+    },
+    {
+      "id": "mach-005",
+      "name": "Test Stand #1",
+      "type": "Test Equipment",
+      "location": "Building A - Bay 4",
+      "status": "maintenance",
+      "lastHeartbeat": "2025-11-29T07:00:00Z",
+      "oee": 0,
+      "cycleTime": null,
+      "partCount": 0
+    },
+    {
+      "id": "mach-006",
+      "name": "Welding Robot #1",
+      "type": "Robotic Welder",
+      "location": "Building B - Bay 2",
+      "status": "online",
+      "lastHeartbeat": "2025-11-29T10:44:45Z",
+      "oee": 85.7,
+      "currentJob": "WO-2025-002",
+      "cycleTime": 120,
+      "partCount": 45
+    }
+  ],
+  "integrations": [
+    {
+      "id": "int-001",
+      "name": "OPC-UA Server - Building A",
+      "type": "opc_ua",
+      "status": "connected",
+      "endpoint": "opc.tcp://192.168.1.100:4840",
+      "lastSync": "2025-11-29T10:45:00Z",
+      "config": {
+        "namespace": "ns=2",
+        "pollingInterval": 1000
+      }
+    },
+    {
+      "id": "int-002",
+      "name": "MQTT Broker - Shop Floor",
+      "type": "mqtt",
+      "status": "connected",
+      "endpoint": "mqtt://192.168.1.50:1883",
+      "lastSync": "2025-11-29T10:44:55Z",
+      "config": {
+        "topic": "manufacturing/+/telemetry",
+        "qos": 1
+      }
+    },
+    {
+      "id": "int-003",
+      "name": "ERP Integration",
+      "type": "rest_api",
+      "status": "connected",
+      "endpoint": "https://erp.manufacturing.demo/api/v1",
+      "lastSync": "2025-11-29T10:30:00Z",
+      "config": {
+        "syncInterval": 300000,
+        "entities": ["work_orders", "inventory", "customers"]
+      }
+    },
+    {
+      "id": "int-004",
+      "name": "Quality Database",
+      "type": "database",
+      "status": "disconnected",
+      "endpoint": "postgresql://qms.manufacturing.demo:5432/quality",
+      "lastSync": "2025-11-29T09:00:00Z",
+      "config": {
+        "schema": "quality_data",
+        "syncTables": ["inspections", "ncrs", "calibrations"]
+      }
+    }
+  ],
+  "telemetryHistory": [
+    {
+      "machineId": "mach-001",
+      "timestamp": "2025-11-29T10:45:00Z",
+      "temperature": 42.5,
+      "vibration": 0.8,
+      "power": 15.2,
+      "cycleTime": 45,
+      "status": "online"
+    },
+    {
+      "machineId": "mach-001",
+      "timestamp": "2025-11-29T10:44:00Z",
+      "temperature": 42.3,
+      "vibration": 0.75,
+      "power": 14.8,
+      "cycleTime": 44,
+      "status": "online"
+    },
+    {
+      "machineId": "mach-002",
+      "timestamp": "2025-11-29T10:44:30Z",
+      "temperature": 38.7,
+      "vibration": 0.5,
+      "power": 8.5,
+      "cycleTime": 32,
+      "status": "online"
+    }
+  ]
+}

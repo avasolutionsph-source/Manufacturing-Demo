@@ -1,0 +1,85 @@
+{
+  "kpis": {
+    "oee": 78.5,
+    "onTimeDelivery": 94.2,
+    "inventoryTurns": 8.3,
+    "openWorkOrders": 24
+  },
+  "productionData": [
+    { "date": "2025-11-23", "qty": 145 },
+    { "date": "2025-11-24", "qty": 132 },
+    { "date": "2025-11-25", "qty": 158 },
+    { "date": "2025-11-26", "qty": 124 },
+    { "date": "2025-11-27", "qty": 167 },
+    { "date": "2025-11-28", "qty": 143 },
+    { "date": "2025-11-29", "qty": 89 }
+  ],
+  "recentWorkOrders": [
+    {
+      "id": "wo-001",
+      "workOrderNumber": "WO-2025-001",
+      "productName": "Industrial Valve Assembly",
+      "qty": 50,
+      "status": "in_progress",
+      "dueDate": "2025-12-02"
+    },
+    {
+      "id": "wo-002",
+      "workOrderNumber": "WO-2025-002",
+      "productName": "Hydraulic Pump Unit",
+      "qty": 25,
+      "status": "released",
+      "dueDate": "2025-12-05"
+    },
+    {
+      "id": "wo-003",
+      "workOrderNumber": "WO-2025-003",
+      "productName": "Control Panel Assembly",
+      "qty": 100,
+      "status": "created",
+      "dueDate": "2025-12-08"
+    },
+    {
+      "id": "wo-004",
+      "workOrderNumber": "WO-2025-004",
+      "productName": "Precision Bearing Set",
+      "qty": 200,
+      "status": "completed",
+      "dueDate": "2025-11-28"
+    },
+    {
+      "id": "wo-005",
+      "workOrderNumber": "WO-2025-005",
+      "productName": "Electric Motor Housing",
+      "qty": 75,
+      "status": "in_progress",
+      "dueDate": "2025-12-01"
+    }
+  ],
+  "recentNCRs": [
+    {
+      "id": "ncr-001",
+      "ncrNumber": "NCR-2025-001",
+      "title": "Surface finish out of specification",
+      "severity": "major",
+      "status": "investigating",
+      "reportedAt": "2025-11-28T10:30:00Z"
+    },
+    {
+      "id": "ncr-002",
+      "ncrNumber": "NCR-2025-002",
+      "title": "Dimensional variance on bearing mount",
+      "severity": "minor",
+      "status": "open",
+      "reportedAt": "2025-11-29T08:15:00Z"
+    },
+    {
+      "id": "ncr-003",
+      "ncrNumber": "NCR-2025-003",
+      "title": "Material hardness below tolerance",
+      "severity": "critical",
+      "status": "investigating",
+      "reportedAt": "2025-11-27T14:45:00Z"
+    }
+  ]
+}

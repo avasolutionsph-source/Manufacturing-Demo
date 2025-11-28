@@ -1,0 +1,201 @@
+{
+  "items": [
+    {
+      "id": "inv-001",
+      "sku": "VAL-001",
+      "name": "Ball Valve 2-inch",
+      "description": "2-inch stainless steel ball valve with pneumatic actuator",
+      "category": "Valves",
+      "onHand": 145,
+      "allocated": 30,
+      "available": 115,
+      "location": "A1-B2-C3",
+      "unitCost": 125.50,
+      "reorderPoint": 50,
+      "lots": [
+        { "lot": "LOT-2025-001", "qty": 75, "expiryDate": null, "receivedDate": "2025-10-15" },
+        { "lot": "LOT-2025-002", "qty": 70, "expiryDate": null, "receivedDate": "2025-11-01" }
+      ],
+      "transactions": [
+        { "id": "txn-001", "date": "2025-11-28", "type": "issue", "qty": -20, "reference": "WO-2025-001", "user": "Mike Rodriguez" },
+        { "id": "txn-002", "date": "2025-11-25", "type": "receipt", "qty": 70, "reference": "PO-2025-089", "user": "Sarah Johnson" },
+        { "id": "txn-003", "date": "2025-11-20", "type": "issue", "qty": -15, "reference": "WO-2024-998", "user": "Mike Rodriguez" }
+      ]
+    },
+    {
+      "id": "inv-002",
+      "sku": "BRG-001",
+      "name": "Precision Bearing 6205",
+      "description": "Deep groove ball bearing, 25x52x15mm",
+      "category": "Bearings",
+      "onHand": 320,
+      "allocated": 80,
+      "available": 240,
+      "location": "B2-C1-D4",
+      "unitCost": 18.75,
+      "reorderPoint": 100,
+      "lots": [
+        { "lot": "LOT-2025-BRG-001", "qty": 200, "expiryDate": null, "receivedDate": "2025-09-20" },
+        { "lot": "LOT-2025-BRG-002", "qty": 120, "expiryDate": null, "receivedDate": "2025-11-10" }
+      ],
+      "transactions": [
+        { "id": "txn-004", "date": "2025-11-27", "type": "issue", "qty": -40, "reference": "WO-2025-004", "user": "Mike Rodriguez" },
+        { "id": "txn-005", "date": "2025-11-10", "type": "receipt", "qty": 120, "reference": "PO-2025-092", "user": "Sarah Johnson" }
+      ]
+    },
+    {
+      "id": "inv-003",
+      "sku": "MTR-001",
+      "name": "Electric Motor 5HP",
+      "description": "3-phase induction motor, 5HP, 1750 RPM",
+      "category": "Motors",
+      "onHand": 28,
+      "allocated": 12,
+      "available": 16,
+      "location": "C3-D2-E1",
+      "unitCost": 485.00,
+      "reorderPoint": 10,
+      "lots": [
+        { "lot": "LOT-2025-MTR-001", "qty": 28, "expiryDate": null, "receivedDate": "2025-10-05" }
+      ],
+      "transactions": [
+        { "id": "txn-006", "date": "2025-11-26", "type": "issue", "qty": -5, "reference": "WO-2025-005", "user": "Mike Rodriguez" },
+        { "id": "txn-007", "date": "2025-10-05", "type": "receipt", "qty": 33, "reference": "PO-2025-078", "user": "Sarah Johnson" }
+      ]
+    },
+    {
+      "id": "inv-004",
+      "sku": "PMP-001",
+      "name": "Hydraulic Pump Assembly",
+      "description": "Variable displacement piston pump, 20GPM",
+      "category": "Pumps",
+      "onHand": 15,
+      "allocated": 8,
+      "available": 7,
+      "location": "D1-E2-F3",
+      "unitCost": 1250.00,
+      "reorderPoint": 5,
+      "lots": [
+        { "lot": "LOT-2025-PMP-001", "qty": 15, "expiryDate": null, "receivedDate": "2025-11-15" }
+      ],
+      "transactions": [
+        { "id": "txn-008", "date": "2025-11-28", "type": "issue", "qty": -3, "reference": "WO-2025-002", "user": "Mike Rodriguez" }
+      ]
+    },
+    {
+      "id": "inv-005",
+      "sku": "HSG-001",
+      "name": "Motor Housing Cast Iron",
+      "description": "Cast iron motor housing for 5-10HP motors",
+      "category": "Housings",
+      "onHand": 45,
+      "allocated": 20,
+      "available": 25,
+      "location": "E2-F1-G2",
+      "unitCost": 89.00,
+      "reorderPoint": 15,
+      "lots": [
+        { "lot": "LOT-2025-HSG-001", "qty": 45, "expiryDate": null, "receivedDate": "2025-10-25" }
+      ],
+      "transactions": [
+        { "id": "txn-009", "date": "2025-11-27", "type": "issue", "qty": -10, "reference": "WO-2025-005", "user": "Mike Rodriguez" }
+      ]
+    },
+    {
+      "id": "inv-006",
+      "sku": "SFT-001",
+      "name": "Drive Shaft Steel",
+      "description": "Hardened steel drive shaft, 1-inch diameter, 12-inch length",
+      "category": "Shafts",
+      "onHand": 89,
+      "allocated": 25,
+      "available": 64,
+      "location": "F3-G2-H1",
+      "unitCost": 45.50,
+      "reorderPoint": 30,
+      "lots": [
+        { "lot": "LOT-2025-SFT-001", "qty": 89, "expiryDate": null, "receivedDate": "2025-11-08" }
+      ],
+      "transactions": [
+        { "id": "txn-010", "date": "2025-11-26", "type": "issue", "qty": -15, "reference": "WO-2025-001", "user": "Mike Rodriguez" }
+      ]
+    },
+    {
+      "id": "inv-007",
+      "sku": "SLV-001",
+      "name": "Solenoid Valve 24V",
+      "description": "24V DC solenoid valve, normally closed, 1/4-inch port",
+      "category": "Valves",
+      "onHand": 200,
+      "allocated": 50,
+      "available": 150,
+      "location": "A2-B3-C1",
+      "unitCost": 35.00,
+      "reorderPoint": 75,
+      "lots": [
+        { "lot": "LOT-2025-SLV-001", "qty": 200, "expiryDate": null, "receivedDate": "2025-11-12" }
+      ],
+      "transactions": [
+        { "id": "txn-011", "date": "2025-11-28", "type": "issue", "qty": -25, "reference": "WO-2025-003", "user": "Mike Rodriguez" }
+      ]
+    },
+    {
+      "id": "inv-008",
+      "sku": "GSK-001",
+      "name": "Rubber Gasket Set",
+      "description": "Industrial rubber gasket set, various sizes",
+      "category": "Gaskets",
+      "onHand": 450,
+      "allocated": 100,
+      "available": 350,
+      "location": "G1-H2-I3",
+      "unitCost": 12.50,
+      "reorderPoint": 150,
+      "lots": [
+        { "lot": "LOT-2025-GSK-001", "qty": 300, "expiryDate": "2027-11-01", "receivedDate": "2025-10-01" },
+        { "lot": "LOT-2025-GSK-002", "qty": 150, "expiryDate": "2027-12-15", "receivedDate": "2025-11-20" }
+      ],
+      "transactions": [
+        { "id": "txn-012", "date": "2025-11-29", "type": "issue", "qty": -50, "reference": "WO-2025-001", "user": "Mike Rodriguez" }
+      ]
+    },
+    {
+      "id": "inv-009",
+      "sku": "CPL-001",
+      "name": "Flexible Coupling",
+      "description": "Flexible jaw coupling, 1-inch bore",
+      "category": "Couplings",
+      "onHand": 78,
+      "allocated": 20,
+      "available": 58,
+      "location": "H2-I1-J2",
+      "unitCost": 28.00,
+      "reorderPoint": 25,
+      "lots": [
+        { "lot": "LOT-2025-CPL-001", "qty": 78, "expiryDate": null, "receivedDate": "2025-10-18" }
+      ],
+      "transactions": [
+        { "id": "txn-013", "date": "2025-11-27", "type": "issue", "qty": -12, "reference": "WO-2025-004", "user": "Mike Rodriguez" }
+      ]
+    },
+    {
+      "id": "inv-010",
+      "sku": "PNL-001",
+      "name": "Control Panel Enclosure",
+      "description": "NEMA 4X stainless steel enclosure, 24x24x8 inches",
+      "category": "Enclosures",
+      "onHand": 22,
+      "allocated": 10,
+      "available": 12,
+      "location": "I3-J2-K1",
+      "unitCost": 320.00,
+      "reorderPoint": 8,
+      "lots": [
+        { "lot": "LOT-2025-PNL-001", "qty": 22, "expiryDate": null, "receivedDate": "2025-11-05" }
+      ],
+      "transactions": [
+        { "id": "txn-014", "date": "2025-11-26", "type": "issue", "qty": -5, "reference": "WO-2025-003", "user": "Mike Rodriguez" }
+      ]
+    }
+  ]
+}

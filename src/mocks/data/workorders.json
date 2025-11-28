@@ -1,0 +1,358 @@
+{
+  "workOrders": [
+    {
+      "id": "wo-001",
+      "workOrderNumber": "WO-2025-001",
+      "productId": "prd-001",
+      "productName": "Industrial Valve Assembly",
+      "productSku": "IVA-001",
+      "qty": 50,
+      "producedQty": 32,
+      "scrapQty": 2,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2025-12-02",
+      "startDate": "2025-11-25",
+      "bomVersion": "1.2",
+      "assignedTo": "Mike Rodriguez",
+      "notes": "Priority order for customer ABC Corp",
+      "operations": [
+        {
+          "id": "op-001-1",
+          "sequence": 10,
+          "name": "Valve Preparation",
+          "workCenter": "WC-PREP",
+          "setupTime": 30,
+          "runTime": 15,
+          "status": "completed",
+          "startedAt": "2025-11-25T08:00:00Z",
+          "completedAt": "2025-11-25T14:30:00Z",
+          "operator": "Mike Rodriguez"
+        },
+        {
+          "id": "op-001-2",
+          "sequence": 20,
+          "name": "Assembly",
+          "workCenter": "WC-ASSY",
+          "setupTime": 20,
+          "runTime": 25,
+          "status": "in_progress",
+          "startedAt": "2025-11-26T08:00:00Z",
+          "operator": "Mike Rodriguez"
+        },
+        {
+          "id": "op-001-3",
+          "sequence": 30,
+          "name": "Testing & QC",
+          "workCenter": "WC-TEST",
+          "setupTime": 15,
+          "runTime": 10,
+          "status": "pending"
+        }
+      ],
+      "activityLog": [
+        {
+          "id": "log-001-1",
+          "timestamp": "2025-11-24T10:00:00Z",
+          "action": "Work order created",
+          "user": "Sarah Johnson"
+        },
+        {
+          "id": "log-001-2",
+          "timestamp": "2025-11-24T14:00:00Z",
+          "action": "Status changed to Released",
+          "user": "Sarah Johnson"
+        },
+        {
+          "id": "log-001-3",
+          "timestamp": "2025-11-25T08:00:00Z",
+          "action": "Production started - Operation 10",
+          "user": "Mike Rodriguez"
+        },
+        {
+          "id": "log-001-4",
+          "timestamp": "2025-11-26T08:00:00Z",
+          "action": "Operation 10 completed, starting Operation 20",
+          "user": "Mike Rodriguez"
+        },
+        {
+          "id": "log-001-5",
+          "timestamp": "2025-11-28T16:00:00Z",
+          "action": "Produced qty updated: 32 units",
+          "user": "Mike Rodriguez"
+        }
+      ],
+      "createdAt": "2025-11-24T10:00:00Z",
+      "createdBy": "Sarah Johnson"
+    },
+    {
+      "id": "wo-002",
+      "workOrderNumber": "WO-2025-002",
+      "productId": "prd-002",
+      "productName": "Hydraulic Pump Unit",
+      "productSku": "HPU-001",
+      "qty": 25,
+      "producedQty": 0,
+      "scrapQty": 0,
+      "status": "released",
+      "priority": "medium",
+      "dueDate": "2025-12-05",
+      "bomVersion": "2.0",
+      "assignedTo": "Mike Rodriguez",
+      "operations": [
+        {
+          "id": "op-002-1",
+          "sequence": 10,
+          "name": "Component Preparation",
+          "workCenter": "WC-PREP",
+          "setupTime": 45,
+          "runTime": 30,
+          "status": "pending"
+        },
+        {
+          "id": "op-002-2",
+          "sequence": 20,
+          "name": "Pump Assembly",
+          "workCenter": "WC-ASSY",
+          "setupTime": 30,
+          "runTime": 45,
+          "status": "pending"
+        },
+        {
+          "id": "op-002-3",
+          "sequence": 30,
+          "name": "Pressure Testing",
+          "workCenter": "WC-TEST",
+          "setupTime": 20,
+          "runTime": 20,
+          "status": "pending"
+        }
+      ],
+      "activityLog": [
+        {
+          "id": "log-002-1",
+          "timestamp": "2025-11-26T09:00:00Z",
+          "action": "Work order created",
+          "user": "Sarah Johnson"
+        },
+        {
+          "id": "log-002-2",
+          "timestamp": "2025-11-27T08:00:00Z",
+          "action": "Status changed to Released",
+          "user": "Sarah Johnson"
+        }
+      ],
+      "createdAt": "2025-11-26T09:00:00Z",
+      "createdBy": "Sarah Johnson"
+    },
+    {
+      "id": "wo-003",
+      "workOrderNumber": "WO-2025-003",
+      "productId": "prd-003",
+      "productName": "Control Panel Assembly",
+      "productSku": "CPA-001",
+      "qty": 100,
+      "producedQty": 0,
+      "scrapQty": 0,
+      "status": "created",
+      "priority": "low",
+      "dueDate": "2025-12-08",
+      "bomVersion": "1.0",
+      "operations": [
+        {
+          "id": "op-003-1",
+          "sequence": 10,
+          "name": "Enclosure Preparation",
+          "workCenter": "WC-PREP",
+          "setupTime": 20,
+          "runTime": 10,
+          "status": "pending"
+        },
+        {
+          "id": "op-003-2",
+          "sequence": 20,
+          "name": "Wiring & Assembly",
+          "workCenter": "WC-ELEC",
+          "setupTime": 30,
+          "runTime": 60,
+          "status": "pending"
+        },
+        {
+          "id": "op-003-3",
+          "sequence": 30,
+          "name": "Functional Testing",
+          "workCenter": "WC-TEST",
+          "setupTime": 15,
+          "runTime": 25,
+          "status": "pending"
+        }
+      ],
+      "activityLog": [
+        {
+          "id": "log-003-1",
+          "timestamp": "2025-11-28T11:00:00Z",
+          "action": "Work order created",
+          "user": "Sarah Johnson"
+        }
+      ],
+      "createdAt": "2025-11-28T11:00:00Z",
+      "createdBy": "Sarah Johnson"
+    },
+    {
+      "id": "wo-004",
+      "workOrderNumber": "WO-2025-004",
+      "productId": "prd-004",
+      "productName": "Precision Bearing Set",
+      "productSku": "PBS-001",
+      "qty": 200,
+      "producedQty": 200,
+      "scrapQty": 3,
+      "status": "completed",
+      "priority": "medium",
+      "dueDate": "2025-11-28",
+      "startDate": "2025-11-22",
+      "completedDate": "2025-11-27",
+      "bomVersion": "1.0",
+      "assignedTo": "Mike Rodriguez",
+      "operations": [
+        {
+          "id": "op-004-1",
+          "sequence": 10,
+          "name": "Bearing Inspection",
+          "workCenter": "WC-QC",
+          "setupTime": 15,
+          "runTime": 5,
+          "status": "completed",
+          "startedAt": "2025-11-22T08:00:00Z",
+          "completedAt": "2025-11-24T12:00:00Z",
+          "operator": "Emily Chen"
+        },
+        {
+          "id": "op-004-2",
+          "sequence": 20,
+          "name": "Set Assembly",
+          "workCenter": "WC-ASSY",
+          "setupTime": 10,
+          "runTime": 8,
+          "status": "completed",
+          "startedAt": "2025-11-24T13:00:00Z",
+          "completedAt": "2025-11-26T16:00:00Z",
+          "operator": "Mike Rodriguez"
+        },
+        {
+          "id": "op-004-3",
+          "sequence": 30,
+          "name": "Final QC",
+          "workCenter": "WC-QC",
+          "setupTime": 10,
+          "runTime": 5,
+          "status": "completed",
+          "startedAt": "2025-11-27T08:00:00Z",
+          "completedAt": "2025-11-27T14:00:00Z",
+          "operator": "Emily Chen"
+        }
+      ],
+      "activityLog": [
+        {
+          "id": "log-004-1",
+          "timestamp": "2025-11-20T09:00:00Z",
+          "action": "Work order created",
+          "user": "Sarah Johnson"
+        },
+        {
+          "id": "log-004-2",
+          "timestamp": "2025-11-21T08:00:00Z",
+          "action": "Status changed to Released",
+          "user": "Sarah Johnson"
+        },
+        {
+          "id": "log-004-3",
+          "timestamp": "2025-11-22T08:00:00Z",
+          "action": "Production started",
+          "user": "Mike Rodriguez"
+        },
+        {
+          "id": "log-004-4",
+          "timestamp": "2025-11-27T14:00:00Z",
+          "action": "Work order completed - 200 units produced, 3 scrapped",
+          "user": "Mike Rodriguez"
+        }
+      ],
+      "createdAt": "2025-11-20T09:00:00Z",
+      "createdBy": "Sarah Johnson"
+    },
+    {
+      "id": "wo-005",
+      "workOrderNumber": "WO-2025-005",
+      "productId": "prd-005",
+      "productName": "Electric Motor Housing",
+      "productSku": "EMH-001",
+      "qty": 75,
+      "producedQty": 45,
+      "scrapQty": 1,
+      "status": "in_progress",
+      "priority": "urgent",
+      "dueDate": "2025-12-01",
+      "startDate": "2025-11-26",
+      "bomVersion": "1.1",
+      "assignedTo": "Mike Rodriguez",
+      "notes": "Rush order - expedite if possible",
+      "operations": [
+        {
+          "id": "op-005-1",
+          "sequence": 10,
+          "name": "Housing Machining",
+          "workCenter": "WC-MACH",
+          "setupTime": 60,
+          "runTime": 20,
+          "status": "completed",
+          "startedAt": "2025-11-26T08:00:00Z",
+          "completedAt": "2025-11-27T16:00:00Z",
+          "operator": "Mike Rodriguez"
+        },
+        {
+          "id": "op-005-2",
+          "sequence": 20,
+          "name": "Bearing Installation",
+          "workCenter": "WC-ASSY",
+          "setupTime": 15,
+          "runTime": 15,
+          "status": "in_progress",
+          "startedAt": "2025-11-28T08:00:00Z",
+          "operator": "Mike Rodriguez"
+        },
+        {
+          "id": "op-005-3",
+          "sequence": 30,
+          "name": "Balancing & Test",
+          "workCenter": "WC-TEST",
+          "setupTime": 20,
+          "runTime": 10,
+          "status": "pending"
+        }
+      ],
+      "activityLog": [
+        {
+          "id": "log-005-1",
+          "timestamp": "2025-11-25T14:00:00Z",
+          "action": "Work order created",
+          "user": "Sarah Johnson"
+        },
+        {
+          "id": "log-005-2",
+          "timestamp": "2025-11-25T14:30:00Z",
+          "action": "Priority set to Urgent",
+          "user": "Sarah Johnson"
+        },
+        {
+          "id": "log-005-3",
+          "timestamp": "2025-11-26T08:00:00Z",
+          "action": "Production started",
+          "user": "Mike Rodriguez"
+        }
+      ],
+      "createdAt": "2025-11-25T14:00:00Z",
+      "createdBy": "Sarah Johnson"
+    }
+  ]
+}

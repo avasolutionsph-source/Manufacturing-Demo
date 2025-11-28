@@ -1,0 +1,369 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Manufacturing Demo API",
+    "version": "1.0.0",
+    "description": "Mock API specification for the Manufacturing ERP Demo application"
+  },
+  "servers": [
+    {
+      "url": "/api",
+      "description": "Local mock server (MSW)"
+    }
+  ],
+  "paths": {
+    "/auth/login": {
+      "post": {
+        "summary": "User login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": { "type": "string" },
+                  "password": { "type": "string" }
+                },
+                "required": ["email", "password"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful login",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": { "type": "string" },
+                    "user": { "$ref": "#/components/schemas/User" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dashboard/kpis": {
+      "get": {
+        "summary": "Get dashboard KPIs",
+        "responses": {
+          "200": {
+            "description": "KPI data",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/KPIData" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dashboard/production": {
+      "get": {
+        "summary": "Get production data",
+        "parameters": [
+          {
+            "name": "days",
+            "in": "query",
+            "schema": { "type": "integer", "default": 7 }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Production data array",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/ProductionData" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/items": {
+      "get": {
+        "summary": "List inventory items",
+        "parameters": [
+          { "name": "page", "in": "query", "schema": { "type": "integer", "default": 1 } },
+          { "name": "pageSize", "in": "query", "schema": { "type": "integer", "default": 10 } },
+          { "name": "search", "in": "query", "schema": { "type": "string" } },
+          { "name": "category", "in": "query", "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated inventory items",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/PaginatedInventory" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/items/{id}": {
+      "get": {
+        "summary": "Get inventory item details",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Item details with BOM and transactions",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/InventoryItem" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "summary": "List all products",
+        "responses": {
+          "200": {
+            "description": "Product list",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Product" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/boms/{productId}": {
+      "get": {
+        "summary": "Get BOM for a product",
+        "parameters": [
+          { "name": "productId", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product BOM with versions",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ProductBOM" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/workorders": {
+      "get": {
+        "summary": "List work orders",
+        "parameters": [
+          { "name": "status", "in": "query", "schema": { "type": "string" } },
+          { "name": "priority", "in": "query", "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Work order list",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/WorkOrder" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create work order",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CreateWorkOrder" }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created work order",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/WorkOrder" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/workorders/{id}": {
+      "patch": {
+        "summary": "Update work order",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Updated work order"
+          }
+        }
+      }
+    },
+    "/quality/ncrs": {
+      "get": {
+        "summary": "List NCRs",
+        "parameters": [
+          { "name": "status", "in": "query", "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "NCR list"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create NCR",
+        "responses": {
+          "201": {
+            "description": "Created NCR"
+          }
+        }
+      }
+    },
+    "/machines": {
+      "get": {
+        "summary": "List machines",
+        "responses": {
+          "200": {
+            "description": "Machine list with status and telemetry"
+          }
+        }
+      }
+    },
+    "/integrations": {
+      "get": {
+        "summary": "List integrations",
+        "responses": {
+          "200": {
+            "description": "Integration list"
+          }
+        }
+      }
+    },
+    "/planning/mrp": {
+      "post": {
+        "summary": "Run MRP simulation",
+        "responses": {
+          "200": {
+            "description": "MRP results with planned orders and purchase suggestions"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "email": { "type": "string" },
+          "role": { "type": "string", "enum": ["planner", "shop_foreman", "quality_inspector", "admin"] },
+          "plant": { "type": "string" }
+        }
+      },
+      "KPIData": {
+        "type": "object",
+        "properties": {
+          "oee": { "type": "number" },
+          "onTimeDelivery": { "type": "number" },
+          "inventoryTurns": { "type": "number" },
+          "openWorkOrders": { "type": "integer" }
+        }
+      },
+      "ProductionData": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "qty": { "type": "integer" }
+        }
+      },
+      "InventoryItem": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "sku": { "type": "string" },
+          "name": { "type": "string" },
+          "onHand": { "type": "integer" },
+          "allocated": { "type": "integer" },
+          "available": { "type": "integer" },
+          "location": { "type": "string" },
+          "lots": { "type": "array" },
+          "transactions": { "type": "array" }
+        }
+      },
+      "PaginatedInventory": {
+        "type": "object",
+        "properties": {
+          "items": { "type": "array" },
+          "total": { "type": "integer" },
+          "page": { "type": "integer" },
+          "pageSize": { "type": "integer" },
+          "totalPages": { "type": "integer" }
+        }
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "sku": { "type": "string" },
+          "name": { "type": "string" },
+          "currentBomVersion": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      },
+      "ProductBOM": {
+        "type": "object",
+        "properties": {
+          "productId": { "type": "string" },
+          "productName": { "type": "string" },
+          "versions": { "type": "array" }
+        }
+      },
+      "WorkOrder": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "workOrderNumber": { "type": "string" },
+          "productId": { "type": "string" },
+          "qty": { "type": "integer" },
+          "producedQty": { "type": "integer" },
+          "status": { "type": "string" },
+          "dueDate": { "type": "string" },
+          "operations": { "type": "array" }
+        }
+      },
+      "CreateWorkOrder": {
+        "type": "object",
+        "required": ["productId", "qty", "dueDate", "priority", "bomVersion"],
+        "properties": {
+          "productId": { "type": "string" },
+          "qty": { "type": "integer" },
+          "dueDate": { "type": "string" },
+          "priority": { "type": "string" },
+          "bomVersion": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

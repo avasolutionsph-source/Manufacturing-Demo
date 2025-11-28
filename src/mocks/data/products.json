@@ -1,0 +1,325 @@
+{
+  "products": [
+    {
+      "id": "prd-001",
+      "sku": "IVA-001",
+      "name": "Industrial Valve Assembly",
+      "description": "Complete valve assembly with actuator and instrumentation",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 850.00,
+      "currentBomVersion": "1.2",
+      "status": "active"
+    },
+    {
+      "id": "prd-002",
+      "sku": "HPU-001",
+      "name": "Hydraulic Pump Unit",
+      "description": "Complete hydraulic pump unit with reservoir and controls",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 2450.00,
+      "currentBomVersion": "2.0",
+      "status": "active"
+    },
+    {
+      "id": "prd-003",
+      "sku": "CPA-001",
+      "name": "Control Panel Assembly",
+      "description": "Industrial control panel with PLC and HMI",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 1850.00,
+      "currentBomVersion": "1.0",
+      "status": "active"
+    },
+    {
+      "id": "prd-004",
+      "sku": "PBS-001",
+      "name": "Precision Bearing Set",
+      "description": "Matched set of precision bearings for high-speed applications",
+      "category": "Components",
+      "unitOfMeasure": "SET",
+      "standardCost": 125.00,
+      "currentBomVersion": "1.0",
+      "status": "active"
+    },
+    {
+      "id": "prd-005",
+      "sku": "EMH-001",
+      "name": "Electric Motor Housing",
+      "description": "Complete motor housing assembly with cooling fins",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 675.00,
+      "currentBomVersion": "1.1",
+      "status": "active"
+    }
+  ],
+  "boms": {
+    "prd-001": {
+      "productId": "prd-001",
+      "productName": "Industrial Valve Assembly",
+      "versions": [
+        {
+          "version": "1.2",
+          "effectiveDate": "2025-09-01",
+          "status": "active",
+          "createdBy": "Sarah Johnson",
+          "createdAt": "2025-08-15T10:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-001-1",
+              "itemId": "inv-001",
+              "itemSku": "VAL-001",
+              "itemName": "Ball Valve 2-inch",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-001-2",
+              "itemId": "inv-007",
+              "itemSku": "SLV-001",
+              "itemName": "Solenoid Valve 24V",
+              "quantity": 2,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-001-3",
+              "itemId": "inv-008",
+              "itemSku": "GSK-001",
+              "itemName": "Rubber Gasket Set",
+              "quantity": 1,
+              "unitOfMeasure": "SET",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-001-4",
+              "itemId": "inv-006",
+              "itemSku": "SFT-001",
+              "itemName": "Drive Shaft Steel",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            }
+          ]
+        },
+        {
+          "version": "1.1",
+          "effectiveDate": "2025-06-01",
+          "status": "obsolete",
+          "createdBy": "Sarah Johnson",
+          "createdAt": "2025-05-15T10:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-001-1-old",
+              "itemId": "inv-001",
+              "itemSku": "VAL-001",
+              "itemName": "Ball Valve 2-inch",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-001-3-old",
+              "itemId": "inv-008",
+              "itemSku": "GSK-001",
+              "itemName": "Rubber Gasket Set",
+              "quantity": 1,
+              "unitOfMeasure": "SET",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-002": {
+      "productId": "prd-002",
+      "productName": "Hydraulic Pump Unit",
+      "versions": [
+        {
+          "version": "2.0",
+          "effectiveDate": "2025-10-01",
+          "status": "active",
+          "createdBy": "Sarah Johnson",
+          "createdAt": "2025-09-20T14:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-002-1",
+              "itemId": "inv-004",
+              "itemSku": "PMP-001",
+              "itemName": "Hydraulic Pump Assembly",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-002-2",
+              "itemId": "inv-003",
+              "itemSku": "MTR-001",
+              "itemName": "Electric Motor 5HP",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-002-3",
+              "itemId": "inv-009",
+              "itemSku": "CPL-001",
+              "itemName": "Flexible Coupling",
+              "quantity": 2,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-002-4",
+              "itemId": "inv-002",
+              "itemSku": "BRG-001",
+              "itemName": "Precision Bearing 6205",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-002-5",
+              "itemId": "inv-008",
+              "itemSku": "GSK-001",
+              "itemName": "Rubber Gasket Set",
+              "quantity": 2,
+              "unitOfMeasure": "SET",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-003": {
+      "productId": "prd-003",
+      "productName": "Control Panel Assembly",
+      "versions": [
+        {
+          "version": "1.0",
+          "effectiveDate": "2025-07-01",
+          "status": "active",
+          "createdBy": "Sarah Johnson",
+          "createdAt": "2025-06-15T09:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-003-1",
+              "itemId": "inv-010",
+              "itemSku": "PNL-001",
+              "itemName": "Control Panel Enclosure",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-003-2",
+              "itemId": "inv-007",
+              "itemSku": "SLV-001",
+              "itemName": "Solenoid Valve 24V",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-004": {
+      "productId": "prd-004",
+      "productName": "Precision Bearing Set",
+      "versions": [
+        {
+          "version": "1.0",
+          "effectiveDate": "2025-01-01",
+          "status": "active",
+          "createdBy": "Sarah Johnson",
+          "createdAt": "2024-12-15T11:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-004-1",
+              "itemId": "inv-002",
+              "itemSku": "BRG-001",
+              "itemName": "Precision Bearing 6205",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-005": {
+      "productId": "prd-005",
+      "productName": "Electric Motor Housing",
+      "versions": [
+        {
+          "version": "1.1",
+          "effectiveDate": "2025-08-01",
+          "status": "active",
+          "createdBy": "Sarah Johnson",
+          "createdAt": "2025-07-20T16:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-005-1",
+              "itemId": "inv-005",
+              "itemSku": "HSG-001",
+              "itemName": "Motor Housing Cast Iron",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-005-2",
+              "itemId": "inv-002",
+              "itemSku": "BRG-001",
+              "itemName": "Precision Bearing 6205",
+              "quantity": 2,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-005-3",
+              "itemId": "inv-006",
+              "itemSku": "SFT-001",
+              "itemName": "Drive Shaft Steel",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-005-4",
+              "itemId": "inv-008",
+              "itemSku": "GSK-001",
+              "itemName": "Rubber Gasket Set",
+              "quantity": 1,
+              "unitOfMeasure": "SET",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
