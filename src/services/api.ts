@@ -317,5 +317,5 @@ export const shopFloorApi = {
  * // Using cURL:
  * // curl -X POST http://localhost:3000/api/auth/login \
  * //   -H "Content-Type: application/json" \
- * //   -d '{"email": "sarah.johnson@manufacturing.demo", "password": "demo123"}'
+ * //   -d '{"email": "maria.garcia@manufacturing.demo", "password": "demo123"}'
  */

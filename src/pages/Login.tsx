@@ -11,7 +11,7 @@ export function LoginPage() {
   const isAuthenticated = useIsAuthenticated();
   const login = useAuthStore((state) => state.login);
 
-  const [email, setEmail] = useState('sarah.johnson@manufacturing.demo');
+  const [email, setEmail] = useState('maria.garcia@manufacturing.demo');
   const [password, setPassword] = useState('demo123');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
@@ -100,38 +100,38 @@ export function LoginPage() {
               <button
                 type="button"
                 onClick={() => {
-                  setEmail('sarah.johnson@manufacturing.demo');
+                  setEmail('maria.garcia@manufacturing.demo');
                   setPassword('demo123');
                 }}
                 className="p-2 text-left rounded-lg bg-secondary-50 hover:bg-secondary-100 transition-colors"
               >
                 <span className="font-medium text-secondary-700">Planner</span>
                 <br />
-                <span className="text-secondary-500">sarah.johnson@...</span>
+                <span className="text-secondary-500">maria.garcia@...</span>
               </button>
               <button
                 type="button"
                 onClick={() => {
-                  setEmail('mike.rodriguez@manufacturing.demo');
+                  setEmail('miguel.santos@manufacturing.demo');
                   setPassword('demo123');
                 }}
                 className="p-2 text-left rounded-lg bg-secondary-50 hover:bg-secondary-100 transition-colors"
               >
                 <span className="font-medium text-secondary-700">Shop Foreman</span>
                 <br />
-                <span className="text-secondary-500">mike.rodriguez@...</span>
+                <span className="text-secondary-500">miguel.santos@...</span>
               </button>
               <button
                 type="button"
                 onClick={() => {
-                  setEmail('emily.chen@manufacturing.demo');
+                  setEmail('rosa.delacruz@manufacturing.demo');
                   setPassword('demo123');
                 }}
                 className="p-2 text-left rounded-lg bg-secondary-50 hover:bg-secondary-100 transition-colors"
               >
                 <span className="font-medium text-secondary-700">QC Inspector</span>
                 <br />
-                <span className="text-secondary-500">emily.chen@...</span>
+                <span className="text-secondary-500">rosa.delacruz@...</span>
               </button>
               <button
                 type="button"
