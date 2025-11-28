@@ -3,7 +3,7 @@
     "oee": 78.5,
     "onTimeDelivery": 94.2,
     "inventoryTurns": 8.3,
-    "openWorkOrders": 24
+    "openWorkOrders": 28
   },
   "productionData": [
     { "date": "2025-11-23", "qty": 145 },
@@ -26,7 +26,7 @@
     {
       "id": "wo-002",
       "workOrderNumber": "WO-2025-002",
-      "productName": "Hydraulic Pump Unit",
+      "productName": "Hydraulic Power Unit",
       "qty": 25,
       "status": "released",
       "dueDate": "2025-12-05"
@@ -54,13 +54,21 @@
       "qty": 75,
       "status": "in_progress",
       "dueDate": "2025-12-01"
+    },
+    {
+      "id": "wo-006",
+      "workOrderNumber": "WO-2025-006",
+      "productName": "Conveyor System Module",
+      "qty": 10,
+      "status": "released",
+      "dueDate": "2025-12-10"
     }
   ],
   "recentNCRs": [
     {
       "id": "ncr-001",
       "ncrNumber": "NCR-2025-001",
-      "title": "Surface finish out of specification",
+      "title": "Surface finish out of specification on motor housing",
       "severity": "major",
       "status": "investigating",
       "reportedAt": "2025-11-28T10:30:00Z"
@@ -68,7 +76,7 @@
     {
       "id": "ncr-002",
       "ncrNumber": "NCR-2025-002",
-      "title": "Dimensional variance on bearing mount",
+      "title": "Dimensional variance on bearing mount flange",
       "severity": "minor",
       "status": "open",
       "reportedAt": "2025-11-29T08:15:00Z"
@@ -76,10 +84,29 @@
     {
       "id": "ncr-003",
       "ncrNumber": "NCR-2025-003",
-      "title": "Material hardness below tolerance",
+      "title": "Material hardness below tolerance on drive shaft",
       "severity": "critical",
       "status": "investigating",
       "reportedAt": "2025-11-27T14:45:00Z"
+    },
+    {
+      "id": "ncr-004",
+      "ncrNumber": "NCR-2025-004",
+      "title": "Weld porosity detected on frame assembly",
+      "severity": "major",
+      "status": "open",
+      "reportedAt": "2025-11-28T16:20:00Z"
     }
-  ]
+  ],
+  "inventoryValue": 12450000,
+  "monthlyProduction": {
+    "target": 850,
+    "actual": 792,
+    "percentage": 93.2
+  },
+  "qualityMetrics": {
+    "firstPassYield": 96.8,
+    "defectRate": 1.2,
+    "reworkRate": 2.0
+  }
 }

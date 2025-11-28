@@ -4,21 +4,21 @@
       "id": "prd-001",
       "sku": "IVA-001",
       "name": "Industrial Valve Assembly",
-      "description": "Complete valve assembly with actuator and instrumentation",
+      "description": "Complete valve assembly with actuator and instrumentation for industrial process control",
       "category": "Assemblies",
       "unitOfMeasure": "EA",
-      "standardCost": 850.00,
+      "standardCost": 48500.00,
       "currentBomVersion": "1.2",
       "status": "active"
     },
     {
       "id": "prd-002",
       "sku": "HPU-001",
-      "name": "Hydraulic Pump Unit",
-      "description": "Complete hydraulic pump unit with reservoir and controls",
+      "name": "Hydraulic Power Unit",
+      "description": "Complete hydraulic pump unit with reservoir, motor, and controls for heavy machinery",
       "category": "Assemblies",
       "unitOfMeasure": "EA",
-      "standardCost": 2450.00,
+      "standardCost": 185000.00,
       "currentBomVersion": "2.0",
       "status": "active"
     },
@@ -26,10 +26,10 @@
       "id": "prd-003",
       "sku": "CPA-001",
       "name": "Control Panel Assembly",
-      "description": "Industrial control panel with PLC and HMI",
+      "description": "Industrial control panel with Siemens PLC, Weintek HMI, and ABB VFD for automation",
       "category": "Assemblies",
       "unitOfMeasure": "EA",
-      "standardCost": 1850.00,
+      "standardCost": 245000.00,
       "currentBomVersion": "1.0",
       "status": "active"
     },
@@ -37,10 +37,10 @@
       "id": "prd-004",
       "sku": "PBS-001",
       "name": "Precision Bearing Set",
-      "description": "Matched set of precision bearings for high-speed applications",
+      "description": "Matched set of SKF precision bearings for high-speed spindle applications",
       "category": "Components",
       "unitOfMeasure": "SET",
-      "standardCost": 125.00,
+      "standardCost": 6800.00,
       "currentBomVersion": "1.0",
       "status": "active"
     },
@@ -48,11 +48,88 @@
       "id": "prd-005",
       "sku": "EMH-001",
       "name": "Electric Motor Housing",
-      "description": "Complete motor housing assembly with cooling fins",
+      "description": "Complete TECO motor housing assembly with cooling fins and mounting brackets",
       "category": "Assemblies",
       "unitOfMeasure": "EA",
-      "standardCost": 675.00,
+      "standardCost": 38500.00,
       "currentBomVersion": "1.1",
+      "status": "active"
+    },
+    {
+      "id": "prd-006",
+      "sku": "CVS-001",
+      "name": "Conveyor System Module",
+      "description": "3-meter modular belt conveyor section with motor, gearbox, and safety guards",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 320000.00,
+      "currentBomVersion": "1.5",
+      "status": "active"
+    },
+    {
+      "id": "prd-007",
+      "sku": "PNA-001",
+      "name": "Pneumatic Actuation System",
+      "description": "SMC pneumatic system with cylinders, valves, FRL unit, and air tubing",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 78000.00,
+      "currentBomVersion": "2.0",
+      "status": "active"
+    },
+    {
+      "id": "prd-008",
+      "sku": "MDA-001",
+      "name": "Motor Drive Assembly",
+      "description": "Complete motor drive with 5HP motor, Sumitomo gearbox, and Lovejoy coupling",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 125000.00,
+      "currentBomVersion": "3.0",
+      "status": "active"
+    },
+    {
+      "id": "prd-009",
+      "sku": "VMS-001",
+      "name": "Valve Manifold System",
+      "description": "Custom valve manifold with ball valves, solenoid valves, and pressure instrumentation",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 68000.00,
+      "currentBomVersion": "1.1",
+      "status": "active"
+    },
+    {
+      "id": "prd-010",
+      "sku": "PTS-001",
+      "name": "Power Transmission System",
+      "description": "Chain and sprocket drive system with Tsubaki chain, guards, and tensioners",
+      "category": "Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 95000.00,
+      "currentBomVersion": "1.3",
+      "status": "active"
+    },
+    {
+      "id": "prd-011",
+      "sku": "SMS-001",
+      "name": "Sensor Mounting System",
+      "description": "Omron proximity sensor array with brackets, cables, and junction box",
+      "category": "Sub-Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 28000.00,
+      "currentBomVersion": "1.2",
+      "status": "active"
+    },
+    {
+      "id": "prd-012",
+      "sku": "EWH-001",
+      "name": "Electrical Wiring Harness",
+      "description": "Pre-assembled control panel wiring harness with terminals and connectors",
+      "category": "Sub-Assemblies",
+      "unitOfMeasure": "EA",
+      "standardCost": 18500.00,
+      "currentBomVersion": "2.2",
       "status": "active"
     }
   ],
@@ -65,7 +142,7 @@
           "version": "1.2",
           "effectiveDate": "2025-09-01",
           "status": "active",
-          "createdBy": "Sarah Johnson",
+          "createdBy": "Maria Garcia",
           "createdAt": "2025-08-15T10:00:00Z",
           "nodes": [
             {
@@ -114,7 +191,7 @@
           "version": "1.1",
           "effectiveDate": "2025-06-01",
           "status": "obsolete",
-          "createdBy": "Sarah Johnson",
+          "createdBy": "Maria Garcia",
           "createdAt": "2025-05-15T10:00:00Z",
           "nodes": [
             {
@@ -143,13 +220,13 @@
     },
     "prd-002": {
       "productId": "prd-002",
-      "productName": "Hydraulic Pump Unit",
+      "productName": "Hydraulic Power Unit",
       "versions": [
         {
           "version": "2.0",
           "effectiveDate": "2025-10-01",
           "status": "active",
-          "createdBy": "Sarah Johnson",
+          "createdBy": "Maria Garcia",
           "createdAt": "2025-09-20T14:00:00Z",
           "nodes": [
             {
@@ -170,7 +247,18 @@
               "quantity": 1,
               "unitOfMeasure": "EA",
               "level": 1,
-              "children": []
+              "children": [
+                {
+                  "id": "bom-002-2-1",
+                  "itemId": "inv-002",
+                  "itemSku": "BRG-001",
+                  "itemName": "Precision Bearing 6205",
+                  "quantity": 2,
+                  "unitOfMeasure": "EA",
+                  "level": 2,
+                  "children": []
+                }
+              ]
             },
             {
               "id": "bom-002-3",
@@ -201,6 +289,16 @@
               "unitOfMeasure": "SET",
               "level": 1,
               "children": []
+            },
+            {
+              "id": "bom-002-6",
+              "itemId": "inv-025",
+              "itemSku": "OIL-001",
+              "itemName": "Hydraulic Oil ISO 46",
+              "quantity": 2,
+              "unitOfMeasure": "PAIL",
+              "level": 1,
+              "children": []
             }
           ]
         }
@@ -214,7 +312,7 @@
           "version": "1.0",
           "effectiveDate": "2025-07-01",
           "status": "active",
-          "createdBy": "Sarah Johnson",
+          "createdBy": "Maria Garcia",
           "createdAt": "2025-06-15T09:00:00Z",
           "nodes": [
             {
@@ -229,9 +327,49 @@
             },
             {
               "id": "bom-003-2",
-              "itemId": "inv-007",
-              "itemSku": "SLV-001",
-              "itemName": "Solenoid Valve 24V",
+              "itemId": "inv-011",
+              "itemSku": "PLC-001",
+              "itemName": "PLC Controller Siemens S7-1200",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-003-3",
+              "itemId": "inv-018",
+              "itemSku": "HMI-001",
+              "itemName": "HMI Touch Panel 7-inch",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-003-4",
+              "itemId": "inv-012",
+              "itemSku": "VFD-001",
+              "itemName": "Variable Frequency Drive 10HP",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-003-5",
+              "itemId": "inv-016",
+              "itemSku": "CB-001",
+              "itemName": "Circuit Breaker 30A",
+              "quantity": 6,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-003-6",
+              "itemId": "inv-017",
+              "itemSku": "CTR-001",
+              "itemName": "Magnetic Contactor 25A",
               "quantity": 4,
               "unitOfMeasure": "EA",
               "level": 1,
@@ -249,7 +387,7 @@
           "version": "1.0",
           "effectiveDate": "2025-01-01",
           "status": "active",
-          "createdBy": "Sarah Johnson",
+          "createdBy": "Maria Garcia",
           "createdAt": "2024-12-15T11:00:00Z",
           "nodes": [
             {
@@ -259,6 +397,16 @@
               "itemName": "Precision Bearing 6205",
               "quantity": 4,
               "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-004-2",
+              "itemId": "inv-024",
+              "itemSku": "LBR-001",
+              "itemName": "Lubricant Grease NLGI-2",
+              "quantity": 1,
+              "unitOfMeasure": "PAIL",
               "level": 1,
               "children": []
             }
@@ -274,7 +422,7 @@
           "version": "1.1",
           "effectiveDate": "2025-08-01",
           "status": "active",
-          "createdBy": "Sarah Johnson",
+          "createdBy": "Maria Garcia",
           "createdAt": "2025-07-20T16:00:00Z",
           "nodes": [
             {
@@ -314,6 +462,401 @@
               "itemName": "Rubber Gasket Set",
               "quantity": 1,
               "unitOfMeasure": "SET",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-006": {
+      "productId": "prd-006",
+      "productName": "Conveyor System Module",
+      "versions": [
+        {
+          "version": "1.5",
+          "effectiveDate": "2025-06-01",
+          "status": "active",
+          "createdBy": "Maria Garcia",
+          "createdAt": "2025-05-15T14:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-006-1",
+              "itemId": "inv-003",
+              "itemSku": "MTR-001",
+              "itemName": "Electric Motor 5HP",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-006-2",
+              "itemId": "inv-019",
+              "itemSku": "GBX-001",
+              "itemName": "Gearbox Reducer 20:1",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-006-3",
+              "itemId": "inv-020",
+              "itemSku": "CHN-001",
+              "itemName": "Roller Chain #40",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-006-4",
+              "itemId": "inv-021",
+              "itemSku": "SPK-001",
+              "itemName": "Sprocket 40B18",
+              "quantity": 8,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-006-5",
+              "itemId": "inv-002",
+              "itemSku": "BRG-001",
+              "itemName": "Precision Bearing 6205",
+              "quantity": 12,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-006-6",
+              "itemId": "inv-013",
+              "itemSku": "SEN-001",
+              "itemName": "Proximity Sensor Inductive",
+              "quantity": 6,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-007": {
+      "productId": "prd-007",
+      "productName": "Pneumatic Actuation System",
+      "versions": [
+        {
+          "version": "2.0",
+          "effectiveDate": "2025-04-01",
+          "status": "active",
+          "createdBy": "Maria Garcia",
+          "createdAt": "2025-03-20T10:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-007-1",
+              "itemId": "inv-014",
+              "itemSku": "CYL-001",
+              "itemName": "Pneumatic Cylinder 100mm",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-007-2",
+              "itemId": "inv-007",
+              "itemSku": "SLV-001",
+              "itemName": "Solenoid Valve 24V",
+              "quantity": 8,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-007-3",
+              "itemId": "inv-015",
+              "itemSku": "FRL-001",
+              "itemName": "Air Filter Regulator Lubricator",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-007-4",
+              "itemId": "inv-008",
+              "itemSku": "GSK-001",
+              "itemName": "Rubber Gasket Set",
+              "quantity": 6,
+              "unitOfMeasure": "SET",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-007-5",
+              "itemId": "inv-013",
+              "itemSku": "SEN-001",
+              "itemName": "Proximity Sensor Inductive",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-008": {
+      "productId": "prd-008",
+      "productName": "Motor Drive Assembly",
+      "versions": [
+        {
+          "version": "3.0",
+          "effectiveDate": "2025-03-15",
+          "status": "active",
+          "createdBy": "Maria Garcia",
+          "createdAt": "2025-03-01T09:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-008-1",
+              "itemId": "inv-003",
+              "itemSku": "MTR-001",
+              "itemName": "Electric Motor 5HP",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-008-2",
+              "itemId": "inv-019",
+              "itemSku": "GBX-001",
+              "itemName": "Gearbox Reducer 20:1",
+              "quantity": 1,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-008-3",
+              "itemId": "inv-009",
+              "itemSku": "CPL-001",
+              "itemName": "Flexible Coupling",
+              "quantity": 2,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-008-4",
+              "itemId": "inv-006",
+              "itemSku": "SFT-001",
+              "itemName": "Drive Shaft Steel",
+              "quantity": 2,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-008-5",
+              "itemId": "inv-002",
+              "itemSku": "BRG-001",
+              "itemName": "Precision Bearing 6205",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-008-6",
+              "itemId": "inv-024",
+              "itemSku": "LBR-001",
+              "itemName": "Lubricant Grease NLGI-2",
+              "quantity": 1,
+              "unitOfMeasure": "PAIL",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-009": {
+      "productId": "prd-009",
+      "productName": "Valve Manifold System",
+      "versions": [
+        {
+          "version": "1.1",
+          "effectiveDate": "2025-05-01",
+          "status": "active",
+          "createdBy": "Maria Garcia",
+          "createdAt": "2025-04-15T11:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-009-1",
+              "itemId": "inv-001",
+              "itemSku": "VAL-001",
+              "itemName": "Ball Valve 2-inch",
+              "quantity": 6,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-009-2",
+              "itemId": "inv-007",
+              "itemSku": "SLV-001",
+              "itemName": "Solenoid Valve 24V",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-009-3",
+              "itemId": "inv-008",
+              "itemSku": "GSK-001",
+              "itemName": "Rubber Gasket Set",
+              "quantity": 12,
+              "unitOfMeasure": "SET",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-010": {
+      "productId": "prd-010",
+      "productName": "Power Transmission System",
+      "versions": [
+        {
+          "version": "1.3",
+          "effectiveDate": "2025-04-01",
+          "status": "active",
+          "createdBy": "Maria Garcia",
+          "createdAt": "2025-03-15T14:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-010-1",
+              "itemId": "inv-022",
+              "itemSku": "BLT-001",
+              "itemName": "V-Belt A68",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-010-2",
+              "itemId": "inv-023",
+              "itemSku": "PLY-001",
+              "itemName": "Pulley V-Belt 6-inch",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-010-3",
+              "itemId": "inv-020",
+              "itemSku": "CHN-001",
+              "itemName": "Roller Chain #40",
+              "quantity": 2,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-010-4",
+              "itemId": "inv-021",
+              "itemSku": "SPK-001",
+              "itemName": "Sprocket 40B18",
+              "quantity": 4,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-010-5",
+              "itemId": "inv-002",
+              "itemSku": "BRG-001",
+              "itemName": "Precision Bearing 6205",
+              "quantity": 8,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-010-6",
+              "itemId": "inv-024",
+              "itemSku": "LBR-001",
+              "itemName": "Lubricant Grease NLGI-2",
+              "quantity": 1,
+              "unitOfMeasure": "PAIL",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-011": {
+      "productId": "prd-011",
+      "productName": "Sensor Mounting System",
+      "versions": [
+        {
+          "version": "1.2",
+          "effectiveDate": "2025-04-15",
+          "status": "active",
+          "createdBy": "Maria Garcia",
+          "createdAt": "2025-04-01T10:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-011-1",
+              "itemId": "inv-013",
+              "itemSku": "SEN-001",
+              "itemName": "Proximity Sensor Inductive",
+              "quantity": 6,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "prd-012": {
+      "productId": "prd-012",
+      "productName": "Electrical Wiring Harness",
+      "versions": [
+        {
+          "version": "2.2",
+          "effectiveDate": "2025-05-01",
+          "status": "active",
+          "createdBy": "Maria Garcia",
+          "createdAt": "2025-04-20T09:00:00Z",
+          "nodes": [
+            {
+              "id": "bom-012-1",
+              "itemId": "inv-016",
+              "itemSku": "CB-001",
+              "itemName": "Circuit Breaker 30A",
+              "quantity": 2,
+              "unitOfMeasure": "EA",
+              "level": 1,
+              "children": []
+            },
+            {
+              "id": "bom-012-2",
+              "itemId": "inv-017",
+              "itemSku": "CTR-001",
+              "itemName": "Magnetic Contactor 25A",
+              "quantity": 3,
+              "unitOfMeasure": "EA",
               "level": 1,
               "children": []
             }

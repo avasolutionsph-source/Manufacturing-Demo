@@ -9,7 +9,10 @@
       "Bash(npm run lint)",
       "Bash(npm run dev:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Manufacturing ERP Demo\n\nComplete frontend-only Manufacturing ERP demo application with:\n- React 18 + TypeScript + Vite\n- Tailwind CSS with custom design tokens\n- Zustand for state management\n- React Query for data fetching\n- MSW for mock API\n- Vitest + React Testing Library for tests\n- Framer Motion for animations\n- Recharts for data visualization\n\nPages:\n- Login with role-based access (Planner, Shop Foreman, Quality Inspector)\n- Dashboard with KPIs, charts, and MRP simulation\n- Inventory management with search and filtering\n- Products/BOM with multi-level tree view\n- Work Orders with full lifecycle management\n- Shop Floor operator terminal\n- Quality NCR management\n- Settings with integrations and machine monitoring\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
