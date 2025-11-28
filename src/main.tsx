@@ -4,14 +4,16 @@ import App from './App';
 import './styles/index.css';
 
 async function enableMocking() {
-  if (import.meta.env.DEV) {
-    const { worker } = await import('./mocks/browser');
+  // Enable MSW in all environments since this is a demo app with no real backend
+  const { worker } = await import('./mocks/browser');
 
-    // Start the worker
-    return worker.start({
-      onUnhandledRequest: 'bypass',
-    });
-  }
+  // Start the worker
+  return worker.start({
+    onUnhandledRequest: 'bypass',
+    serviceWorker: {
+      url: '/mockServiceWorker.js',
+    },
+  });
 }
 
 enableMocking().then(() => {
